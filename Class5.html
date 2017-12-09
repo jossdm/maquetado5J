@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+
+<title>HTML &amp; LOGOTIPO</title>
+
+<link rel="stylesheet" href="css/fontello.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+
+<link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+<style>
+body {
+  width: 95%;
+  /*margin: 0 auto;*/
+/*background-color: aquamarine;*/
+}
+
+  h1 {
+      border: solid 2px;
+    /*text-align: center;*/
+  }
+  #datos {
+      position: absolute;
+      border: solid 0px;
+       width: 16%;
+     /* display: inline;*/
+  }
+
+
+  #principal {
+       width: 64%;
+      position: relative;
+      margin-left: 210px;
+      /*border: solid 3px;*/
+      
+      background-color: white;
+  }
+
+
+  #contenido {
+      width: 190px;
+      border: solid 1px;
+
+      margin-left: 990px;
+      margin-top: -450px;  
+      
+  }  
+    #contenedor{       
+        /*border: solid 2px;*/
+    }
+  
+    
+    #img{
+        width: 120px;
+        float: left;  
+    }
+    #img2{
+        
+        width: 120px; 
+        float: left;  
+    }
+    #foo{
+        text-align: center;
+        border: solid 2px;
+    }
+    
+   /*navegacionnn jss*/
+    /**{
+        margin: 0px;
+        padding: 0px;
+    }*/
+    body{
+        background: azure;
+        font-family: 'Berkshire Swash', cursive;
+        font-size: 14px;
+    }
+    .navegacion{
+        width: 100%;
+    }
+    .navegacion nav{
+        width: 90%;
+        max-width: 1100px;
+        background: #2D3447;
+        /* uato para uqe se scentre*/
+        margin: 40px auto;
+    }
+    .navegacion nav ul{
+        list-style: none;
+        position: relative;
+    }
+    .navegacion nav > ul > li{
+        /*se coloca de un lado a otro*/
+        display: inline-block;
+    }
+    .navegacion nav > ul > li > a{
+        color: azure;
+        text-decoration: none;
+        /*para dar el tamano y todo*/
+        display: block;
+        padding: 20px;
+    }
+    .navegacion nav > ul > li > a span{
+        font-size: 20px;
+        position: absolute;
+        bottom: -6px;
+        display: none;
+    }  
+    .navegacion nav > ul > li:hover span{
+        display: block;
+    }
+    /*sub menuuuu*/
+    .navegacion nav ul li .submenu{
+        background: white;
+        padding: 20px;
+        position: absolute;
+        
+        display: none;
+        /*genera la sombra..de la pagina generador de sombras*/
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.23);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.23);
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.23);
+    }
+    .navegacion nav ul li:hover .submenu{
+        display: flex;
+        
+    } 
+    .navegacion nav ul li:hover{
+        background: white;
+        opacity: 0.8;
+        
+    }
+    .navegacion nav ul li a:hover{
+        color: black;
+    } 
+    .navegacion nav ul li .submenu .submenu-items{
+        margin: 0 20px;
+    }
+    .navegacion nav ul li .submenu .submenu-items p{
+        font-weight: 600;
+        width: 110px;
+        display: block;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #565656;
+        margin-bottom: 10px;
+    }
+    .navegacion nav ul li .submenu .submenu-items a{
+        color: #474747;
+        text-decoration: none;
+        margin: 5px 0;
+    }
+    #banner{
+       width: 1211px;
+        height: 120px;
+        background-color: gainsboro;
+        border-radius: 5px;  
+    }
+    
+    /*buscadorrr..*/
+    #search{
+        background: azure;
+        padding-top: 1%;
+        padding-left: 910px;
+        
+        
+    }
+    form{
+        
+        width: 300px;
+       margin: 0 auto;
+        
+        
+    }
+    fieldset{
+        display: inline-block;
+        background:azure;
+        border: 3px solid #333;
+        border-top-color: cadetblue;
+        border-bottom-color: cadetblue;
+        border-radius: 5px;
+        /*para colocar al lado izquierdo*/
+        padding: 1 0 0 40px;
+        
+        border-radius: 30px;
+        
+        -webkit-box-shadow: 14px 7px 37px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 14px 7px 37px 0px rgba(0,0,0,0.75);
+box-shadow: 14px 7px 37px 0px rgba(0,0,0,0.75);
+    }
+    input, button{
+        position: relative;
+        float: left;
+        width: 100px;
+        height:30px;
+        padding: 1;
+        
+        border-radius: 20px;
+        
+    }
+    input{
+        
+        color: #666;
+        border: none;
+        /*z-index: 2;*/
+        box-shadow: inset 0 3px 8px #000;
+    }
+    button{
+        font-size: 1.6em;
+        width: 60px;
+        border: none;
+        background: cadetblue;
+        /*para moverlo a laizquierda*/
+        transform: translate(1px, 0);
+        transition-duration: .3s;
+    }
+    .fa-search-plus{
+        color: #bbb;
+        transform: translate(2px, 0);
+        transition-duration: all .1s ease-out;
+        
+    }
+    /*para quitar el bordeo del serarch*/
+    input:focus{
+        
+        outline: none;
+    }
+    /* para pertenece a la misma jerarquia..estan en mismo padre*/
+    input:focus + buttom{
+        transform: translate(0,0);
+        transition-duration: .3s;
+    }
+    input:focus + buttom .fa{
+        
+        transform: translate(0,0);
+        transition-duration: .5s;
+        /*le icono aparesca al otro lado*/
+    }
+    
+    #logjss{
+        position: fixed;     
+    }
+    
+    /*publcidad border background*/
+    #publicidad{
+        
+        border: 1px dotted orange;
+        border-width: 0.9px;
+        background-color: white;
+        
+    }
+    #noti{
+        border: 1px solid gray;
+        border-width: 1px;
+        background-color: white;
+    }
+</style>
+</head>
+<body>
+<div>
+  <div id="logjss">Log DvJoss</div>
+   <form id="search">
+      
+       <fieldset>
+           <input type="search" placeholder="       Buscar..jss"/>
+           <button type="button">
+               
+               <i class="fa fa-search-plus" aria-hidden="true"></i>
+           </button>
+       </fieldset>
+   </form>
+</div>
+
+<div class="navegacion">
+   <nav>
+       <ul>
+           <li><a href="#">Inicio <span class="icon icon-sort-up"></span></a>
+           <div class="submenu">
+               <div class="submenu-items">
+                   <p>Submenu #S</p>
+                   <ul>
+                       <li><a href="#">Item #1</a></li>
+                       <li><a href="#">Item #2</a></li>
+                       <li><a href="#">Item #3</a></li>
+                   </ul>
+               </div>
+               <div class="submenu-items">
+                   <p>Submenu #S</p>
+                   <ul>
+                       <li><a href="#">Item #1</a></li>
+                       <li><a href="#">Item #2</a></li>
+                       <li><a href="#">Item #3</a></li>
+                   </ul>
+               </div>
+               <div class="submenu-items">
+                   <p>Submenu #S</p>
+                   <ul>
+                       <li><a href="#">Item #1</a></li>
+                       <li><a href="#">Item #2</a></li>
+                       <li><a href="#">Item #3</a></li>
+                   </ul>
+               </div>
+           </div>
+           </li>
+           
+           <li>
+           <a href="">Servicios <span class="icon icon-sort-up"></span></a>
+           
+           <div class="submenu">
+               <div class="submenu-items">
+                   <p>Submenu #S</p>
+                   <ul>
+                       <li><a href="#">Item #1</a></li>
+                       <li><a href="#">Item #2</a></li>
+                       <li><a href="#">Item #3</a></li>
+                   </ul>
+               </div>
+               <div class="submenu-items">
+                   <p>Submenu #S</p>
+                   <ul>
+                       <li><a href="#">Item #1</a></li>
+                       <li><a href="#">Item #2</a></li>
+                       <li><a href="#">Item #3</a></li>
+                   </ul>
+               </div>
+               <div class="submenu-items">
+                   <p>Submenu #S</p>
+                   <ul>
+                       <li><a href="#">Item #1</a></li>
+                       <li><a href="#">Item #2</a></li>
+                       <li><a href="#">Item #3</a></li>
+                   </ul>
+               </div>
+           </div>
+           
+           </li>
+           
+           <li><a href="">Nosotros <span class="icon icon-sort-up"></span></a>
+           <div class="submenu">
+               <div class="submenu-items">
+                   <p>Submenu #S</p>
+                   <ul>
+                       <li><a href="#">Item #1</a></li>
+                       <li><a href="#">Item #2</a></li>
+                       <li><a href="#">Item #3</a></li>
+                   </ul>
+               </div>
+               <div class="submenu-items">
+                   <p>Submenu #S</p>
+                   <ul>
+                       <li><a href="#">Item #1</a></li>
+                       <li><a href="#">Item #2</a></li>
+                       <li><a href="#">Item #3</a></li>
+                   </ul>
+               </div>
+               <div class="submenu-items">
+                   <p>Submenu #S</p>
+                   <ul>
+                       <li><a href="#">Item #1</a></li>
+                       <li><a href="#">Item #2</a></li>
+                       <li><a href="#">Item #3</a></li>
+                   </ul>
+               </div>
+           </div></li>
+           <li><a href="">Contacto <span class="icon icon-sort-up"></span></a></li>
+       </ul>
+   </nav>
+</div>
+<div id="banner">
+   <center><p>joss</p></center> 
+</div>
+
+<div id="contenedor">
+<br>
+<div id="datos">
+   <div id="noti">
+    <h2>Noticias</h2>
+
+    <ul>
+    <li>dd/mm/aa &amp;<a href="#">CSS:avanzado</a> </li>
+    <li><a href="#">Autor:joss  joss </a></li>
+    <li>dd/mm/aa &amp;<a href="#">CSS:avanzado</a> </li>
+    <li><a href="#">Autor:joss  joss </a></li>
+    <li>dd/mm/aa &amp;<a href="#">CSS:avanzado</a> </li>
+    <li><a href="#">Autor:joss  joss </a></li>
+    <li>dd/mm/aa &amp;<a href="#">CSS:avanzado</a> </li>
+    <li><a href="#">Autor:joss  joss </a></li>
+    <li><a href="#">Enlaces </a></li>
+    <li><a href="#">Enlaces </a></li>
+    <li><a href="#">Enlaces </a></li>
+    </ul>
+  </div>  
+    <br>
+    <div id="publicidad">
+    <li><a href="#">Publicidad </a></li>
+    <p>Lorem ipsum dolor sit amet, consectetur
+     adipisicing elit. Quam, laboriosam.</p>
+     
+    
+     <li><a href="#">Seguir leyendo.... </a></li>
+     </div>
+</div>
+
+<div id="principal">
+    <div id="descripcion">
+        <h2>Lorem ipsum doloree sir amet, consecturas adpcing elit jj</h2>
+        <div>
+        
+        <p id="uno">
+        <img src="img/qwe.jpg" id="img">
+        Aunque los inicios de Internet se remontan a los años sesenta, no ha sido hasta los años noventa cuando, gracias a la Web, se ha extendido su uso por todo el mundo. En pocos años, la Web ha evolucionado enormemente: se ha pasado de páginas sencillas, con pocas imágenes y contenidos estáticos que eran visitadas por unos pocos usuarios a páginas complejas, con contenidos dinámicos que provienen de bases de datos y que son visitadas por miles de usuarios al mismo tiempo.
+        </p>
+        <p><a href="#">Seguir Leyendo...</a></p>
+        </div>
+        <div>
+        <p id="dos">
+        <h2>Vivamu labortis yurpis a ante fringilla faucibus</h2>
+        <img src="img/qwe.jpg" id="img2">
+        Todas las páginas están internamente construidas con la misma tecnología, con el Lenguaje de marcas de hipertexto (Hypertext Markup Language, HTML) y con las Hojas de estilo en cascada (Cascading Style Sheets, CSS).
+        </p>
+        </div>
+        <br>
+        <p>
+        Este libro es adecuado para cualquiera que tenga interés en aprender a desarrollar sus propias páginas web. No son necesarios conocimientos previos para aprender con este libro, lo único que es necesario es saber utilizar un ordenador y saber navegar por la Web.
+        </p>
+        <p><a href="#">Seguir Leyendo...</a></p>
+    </div>
+</div>
+    
+    <div id="contenido">
+       <div>asdasd</div>
+        <h2>Contenido del libro</h2>
+
+        <p>
+        El contenido de este libro se estructura en tres apartados bien diferenciados:
+        </p>
+
+        <ul id="apartados">
+        <li>En la primera parte del libro se trabajan conceptos generales que son necesarios para poder desarrollar páginas web; se explican conceptos de estructura física y estructura lógica (o estructura de navegación) de un sitio web. Se detalla cómo influye la estructura física en las URL o direcciones que se emplean a la hora de crear los funcionamiento como HTML y CSS, empleados para el desarrollo de las páginas web en el lado del cliente.</li>
+
+        </ul>
+    </div>
+
+</div><br>
+<div id="foo"><footer >asdadadadasdasdadadasdadadadasdasdasd</footer></div>
+</body>
+</html>
