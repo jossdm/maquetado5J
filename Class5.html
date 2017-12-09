@@ -73,10 +73,21 @@ body {
         margin: 0px;
         padding: 0px;
     }*/
+    
+    @keyframes pulsacion{
+        0%{
+            background-color: cornflowerblue;
+        }
+        100%{
+            background-color: coral;
+        }
+    }
     body{
         background: #6BB9C4;
         font-family: 'Berkshire Swash', cursive;
         font-size: 14px;
+        
+        animation: pulsacion 5s infinite;
     }
     .navegacion{
         width: 100%;
